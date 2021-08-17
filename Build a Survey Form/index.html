@@ -8,11 +8,12 @@
     </head>
 
     <body>
-        <header>
-            <h1 id="title">Application Form for SCOE Hackathon</h1>
-            <p id="description">Thank you for taking the time to fill the form. All the Best!!!</p>
+        <header class="header">
+            <h1 id="title" class="text-center">Application Form for SCOE Hackathon</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to fill the form. All the Best!!!</p>
         </header>
-        <form action="" id="survey-form">
+
+        <form id="survey-form">
             <div class="form-group">
                 <label id="name-label" for="name">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
@@ -20,35 +21,40 @@
 
             <div class="form-group">
                 <label id="email-label" for="email">Email</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter your email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
             </div>
 
             <div class="form-group">
-                <label id="number-label" for="number">Contact Number</label>
-                <input type="number" class="form-control" id="number" placeholder="Enter your contact number" required>
+                 <label id="phone-label" for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone"  placeholder="Enter your phone number" required>
             </div>
 
             <div class="form-group">
-                <label for="dropdown">Current Year</label>
+                <label id="age-label" for="number">Age</label>
+                <input type="number" class="form-control" min="16" max="23" id="number" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+                <p>Current Year</p>
                 <select name="year" class="form-control" id="dropdown" required>
                     <option disabled selected value>Select current year</option>
-                    <option class="input-radio" value="FE">First Year</option>
-                    <option class="input-radio" value="SE">Second Year</option>
-                    <option class="input-radio" value="TE">Third Year</option>
-                    <option class="input-radio" value="BE">Fourth Year</option>
+                    <option value="FE">First Year</option>
+                    <option value="SE">Second Year</option>
+                    <option value="TE">Third Year</option>
+                    <option value="BE">Fourth Year</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <p>Gender</p>
                 <label>
-                    <input type="radio" name="gender" id="male" >Male
+                    <input type="radio" name="gender" id="male" class="input-radio" checked>Male
                 </label>
                 <label>
-                    <input type="radio" name="gender" id="female">Female
+                    <input type="radio" name="gender" id="female" class="input-radio">Female
                 </label>
                 <label>
-                    <input type="radio" name="gender" id="other">Other
+                    <input type="radio" name="gender" id="other" class="input-radio">Other
                 </label>
             </div>
 
@@ -79,7 +85,7 @@
 
             <div class="form-group">
                 <label for="suggestions">Suggestions</label>
-                <textarea name="suggestions" class="input-textarea" id="suggestions" cols="30" rows="2" placeholder="Enter your valuable suggestions here..."></textarea>
+                <textarea name="suggestions" class="input-textarea form-control" id="suggestions" cols="30" rows="2" placeholder="Enter your valuable suggestions here..."></textarea>
             </div>
 
             <div class="form-group">
