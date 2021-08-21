@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="CSS\styles.css">
     <title>Build a Product Landing Page</title>
 </head>
 <body>
     <header id="header">
-        <img src="images\Apple logo.png" id="header-img" alt="Apple logo">
-
+        <div class="logo">
+            <img src="images\globalnav_apple_image__cxwwnrj0urau_large.svg" id="header-img" alt="Apple logo">
+        </div>
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="Description">Description</a></li>
-                <li><a class="nav-link" href="video">video</a></li>
                 <li><a class="nav-link" href="Highlights">Highlights</a></li>
+                <li><a class="nav-link" href="video">Glimpse</a></li>
                 <li><a class="nav-link" href="Similar Products">Similar Products</a></li>
-                <li><a class="nav-link" href="Reviews">Reviews</a></li>
-                <li><a class="nav-link" href="Top">Top</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +25,7 @@
         <h2>Hello! Sign in</h2>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
             <input type="email" id="email" placeholder="Enter your email">
-            <input type="submit" class="btn" id="suubmit">
+            <input type="submit" class="btn" id="submit" value="Log-in">
         </form>
     </section>
 
@@ -33,36 +33,125 @@
         <section id="description">
             <div class="grid">
                 <div class="desc">
-                    <h2>APPLE iPhone 12 (Blue, 128 GB)</h2>
-                    <img src="images\iphone 12 blue.jpg" alt="iphone 12" id="mobile">
+                    <img src="images\iphone 12.png" alt="iphone 12" id="mobile">
                 </div>
 
                 <div class="desc">
+                    <h2>APPLE iPhone 12 (Blue, 128 GB)</h2>
                     <p id="info">
-                        <b>₹82,900</b>
-                        <strike>₹84,900</strike>
-                        <b>2% off</b>
-                        <b>EMI</b> starts at ₹3,719. No Cost EMI available
+                        <span style="color: rgb(132, 136, 139);"><span style="background-color: rgb(16, 148, 16); font-size: 1.3vw; color: rgb(216, 168, 78);">4.6<img src="images\star.svg" alt=""></span>  7,952 Ratings & 664 Reviews</span>
+                        <b style="font-size: 2em;">₹82,900</b>
+                        <strike style="margin-bottom: 0.3px;">₹84,900</strike>
+                        <b style="font-size: 0.8vw; margin-top: 0.3px;">2% off</b>
+                        <span><b>EMI</b> starts at <b>₹3,719</b>. No Cost EMI available</span>
                         <b>In Stock</b>
-                        Color: <b>Blue</b>
-                        Size: <b>128GB</b>
+                        <span>Color: <b>Blue</b></span>
+                        <span>Size: <b>128GB</b></span>
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="video">
-            <iframe width="800" height="450" src="https://www.youtube.com/watch?v=65JrtwtTOdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-
         <section id="highlights">
-
+            <h2>Highlights</h2>
+            <div>
+                <table>
+                    <tbody>
+                        <tr><td><b>Model Name</b></td><td>IPhone 12 128GB Blue</td></tr>
+                        <tr><td><b>Wireless Carrier</b></td><td>Unlocked for All Carriers</td></tr>
+                        <tr><td><b>Form Factor</b></td><td>Smartphone</td></tr>
+                        <tr><td><b>Memory Storage Capacity</b></td><td>128 GB</td></tr>
+                        <tr><td><b>Color</b></td><td>Blue</td></tr>
+                    </tbody>
+                </table>    
+                <hr>
+                <ul>
+                    <h3>About this item</h3>
+                    <li>6.1-inch (15.5 cm diagonal) Super Retina XDR display</li>
+                    <li>Ceramic Shield, tougher than any smartphone glass</li>
+                    <li>A14 Bionic chip, the fastest chip ever in a smartphone</li>
+                    <li>Advanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep Fusion, Smart HDR 3, 4K Dolby Vision HDR recording</li>
+                    <li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
+                    <li>Industry-leading IP68 water resistance</li>
+                    <li>Supports MagSafe accessories for easy attach and faster wireless charging</li>
+                    <li>iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more</li>
+                </ul>
+            </div>
         </section>
 
+        <section id="video">
+            <iframe  height="450" src="https://www.youtube.com/embed/65JrtwtTOdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
-        <section id="similar-products"></section>
-        <section id="reviews"></section>
-        <section id="top"></section>
+        <section id="similar-products">
+            <h2>Similar Products</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th><img src="images\iphone 12 mini.png" alt=""><span>iPhone 12 Mini</span></th>
+                    <th><img src="images\iphone 12.png" alt=""><span>iPhone 12</span></th>
+                    <th><img src="images\iphone 12 Pro.png" alt=""><span>iPhone 12 Pro</span></th>
+                    <th><img src="images\iphone 12 Pro Max.png" alt=""><span>iPhone 12 Pro Max</span></th>
+                </tr>
+                <tr>
+                    <td><strong>Price</strong></td>
+                    <td>₹69,900.00</td>
+                    <td>₹82,900.00</td>
+                    <td> ₹1,09,650.00</td>
+                    <td>₹1,19,499.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Display</strong></td>
+                    <td>5.4-inch (13.7 cm diagonal) Super Retina XDR display</td>
+                    <td>6.1-inch (15.5 cm diagonal) Super Retina XDR display</td>
+                    <td>6.1-inch (15.5 cm diagonal) Super Retina XDR display</td>
+                    <td>6.7-inch (17 cm diagonal) Super Retina XDR display</td>
+                </tr>
+                <tr>
+                    <td><strong>Camera</strong></td>
+                    <td>Dual 12MP camera system (Ultra Wide, Wide, and Telephoto)</td>
+                    <td>Dual 12MP camera system (Ultra Wide, Wide, and Telephoto)</td>
+                    <td>Pro 12MP camera system (Ultra Wide, Wide, and Telephoto)</td>
+                    <td>Pro 12MP camera system (Ultra Wide, Wide, and Telephoto)</td>
+                </tr>
+                <tr>
+                    <td><strong>Front Camera</strong></td>
+                    <td>12MP TrueDepth camera</td>
+                    <td>12MP TrueDepth camera</td>
+                    <td>12MP TrueDepth camera</td>
+                    <td>12MP TrueDepth camera</td>
+                </tr>
+                <tr>
+                    <td><strong>Face/Touch ID</strong></td>
+                    <td>Face ID</td>
+                    <td>Face ID</td>
+                    <td>Face ID</td>
+                    <td>Face ID</td>
+                </tr>
+                <tr>
+                    <td><strong>Chip</strong></td>
+                    <td>A14 Bionic chip with next-generation Neural Engine</td>
+                    <td>A14 Bionic chip with next-generation Neural Engine</td>
+                    <td>A14 Bionic chip with next-generation Neural Engine</td>
+                    <td>A14 Bionic chip with next-generation Neural Engine</td>
+                </tr>
+                <tr>
+                    <td><strong>Charging</strong></td>
+                    <td>Compatible with MagSafe accessories and Qi wireless chargers</td>
+                    <td>Compatible with MagSafe accessories and Qi wireless chargers</td>
+                    <td>Compatible with MagSafe accessories and Qi wireless chargers</td>
+                    <td>Compatible with MagSafe accessories and Qi wireless chargers</td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <span>Copyright &copy 2021 Apple Inc. All rights reserved.</span>
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
