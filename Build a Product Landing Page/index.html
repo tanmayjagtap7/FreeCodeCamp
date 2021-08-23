@@ -6,15 +6,15 @@
 </head>
 <body>
     <header id="header">
-        <div class="logo">
+        <div class="logo hover-effect">
             <img src="images\globalnav_apple_image__cxwwnrj0urau_large.svg" id="header-img" alt="Apple logo">
         </div>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="Description">Description</a></li>
-                <li><a class="nav-link" href="Highlights">Highlights</a></li>
-                <li><a class="nav-link" href="video">Glimpse</a></li>
-                <li><a class="nav-link" href="Similar Products">Similar Products</a></li>
+                <li class="hover-effect"><a class="nav-link" href="#description">Description</a></li>
+                <li class="hover-effect"><a class="nav-link" href="#highlights">Highlights</a></li>
+                <li class="hover-effect"><a class="nav-link" href="#video">Glimpse</a></li>
+                <li class="hover-effect"><a class="nav-link" href="#similar-products">Similar Products</a></li>
             </ul>
         </nav>
     </header>
@@ -24,8 +24,10 @@
     <section id="hero">
         <h2>Hello! Sign in</h2>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" id="email" placeholder="Enter your email">
-            <input type="submit" class="btn" id="submit" value="Log-in">
+            <div class="input-class">
+                <input type="email" id="email" placeholder="Enter your email">
+                <input type="submit" class="btn" id="submit" value="Log-in">
+            </div>
         </form>
     </section>
 
@@ -47,6 +49,10 @@
                         <b>In Stock</b>
                         <span>Color: <b>Blue</b></span>
                         <span>Size: <b>128GB</b></span>
+                        <div class="buttons">
+                            <button>Add to Cart</button>
+                            <button>Buy</button>
+                        </div>
                     </p>
                 </div>
             </div>
@@ -88,10 +94,10 @@
             <table>
                 <tr>
                     <th></th>
-                    <th><img src="images\iphone 12 mini.png" alt=""><span>iPhone 12 Mini</span></th>
-                    <th><img src="images\iphone 12.png" alt=""><span>iPhone 12</span></th>
-                    <th><img src="images\iphone 12 Pro.png" alt=""><span>iPhone 12 Pro</span></th>
-                    <th><img src="images\iphone 12 Pro Max.png" alt=""><span>iPhone 12 Pro Max</span></th>
+                    <th><img src="images\iphone 12 mini.png" alt="iPhone 12 Mini"><span>iPhone 12 Mini</span></th>
+                    <th><img src="images\iphone 12.png" alt="iPhone 12"><span>iPhone 12</span></th>
+                    <th><img src="images\iphone 12 Pro.png" alt="iPhone 12 Pro"><span>iPhone 12 Pro</span></th>
+                    <th><img src="images\iphone 12 Pro Max.png" alt="iPhone 12 Pro Max"><span>iPhone 12 Pro Max</span></th>
                 </tr>
                 <tr>
                     <td><strong>Price</strong></td>
@@ -147,9 +153,9 @@
         <footer>
             <span>Copyright &copy 2021 Apple Inc. All rights reserved.</span>
             <ul>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Legal</a></li>
+                <li class="hover-effect"><a href="#">Terms of Use</a></li>
+                <li class="hover-effect"><a href="#">Privacy Policy</a></li>
+                <li class="hover-effect"><a href="#">Legal</a></li>
             </ul>
         </footer>
     </div>
