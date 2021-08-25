@@ -1,0 +1,31 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: #37373aab;
+}
+
+header{
+    color: black;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+#nav-bar ul{
+        
+}

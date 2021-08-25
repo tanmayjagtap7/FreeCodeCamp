@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Basic HTML</header>
+        <ul>
+            <li><a href="" class="nav-link">About HTML</a></li>
+            <li><a href="" class="nav-link">Create A Webpage</a></li>
+            <li><a href="" class="nav-link">Text Elements in HTML</a></li>
+            <li><a href="" class="nav-link">Lists in HTML</a></li>
+            <li><a href="" class="nav-link">Links and Images in HTML</a></li>
+            <li><a href="" class="nav-link">Interactive Elements in HTML</a></li>
+            <li><a href="" class="nav-link">Block-level, Inline, and Organizational Elements</a></li>
+            <li><a href="" class="nav-link">Metadata and the Head Element</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="main-section" id="about-html">
+            <header>About HTML</header>
+            <article>
+                <h2>What is HTML?</h2>
+                <p>
+                    Imagine that you're building a house. One of the first things you would do to build a house is put up a frame. There would be nothing but plain, wooden beams in the rough shape of a house, and you wouldn't be able to live in it yet, but it would give an approximation of what the house would eventually look like. The frame would provide the foundation you need to keep working.
+                </p>
+                <img src="images\house-frame.png" alt="">
+                <p>
+                    You can think of <strong>HTML</strong> as that frame for a webpage. HTML is a computer language known as a <strong>markup language</strong>, and the vast majority of the webpages you see on the Internet every day are made of HTML, among other things. 
+                </p>
+
+                <h2>What are HTML elements?</h2>
+                <p>
+                    Like the frame of a house might be composed of individual pieces of wood, an <strong>HTML document</strong> is composed of individual <strong>HTML elements</strong>. Here is an example of a simple HTML element:
+                </p>
+                <code>&lt;p&gt;This is an element&lt;/p&gt;</code>
+                <p>
+                    Each HTML element is made up of <strong>tags</strong>, which for this element are the &lt;p&gt; and &lt;/p&gt; symbols you see on either side. You can think of them as a <strong>container</strong>, where the &lt;p&gt; tag marks the beginning of an element, the &lt;/p&gt; tag marks the end, and the content is the text in between.
+                </p>
+                <p>
+                    The tags in the image below specify that the text inside is a <strong>paragraph</strong>, which lets your browser know how to display it. If you were to load that <p> element in a webpage, for example, you would not see the <p> and </p> tags on the screen. Your browser would just read those tags as <strong>instructions</strong> to take the text in between and show it on the screen, and to give that text a little space above and below, and to let it take up a whole line on its own, just like a paragraph printed in a book.
+                </p>
+                <img src="images\hml2.png" alt="">
+                <p>
+                    In other words, HTML elements provide the <strong>structure</strong> of your page, just like the frame provides the structure of a house. HTML elements generally look very plain on their own—we'll get to that later, when <strong>CSS</strong> provides the <strong>presentation</strong> of your page—but they are the skeleton under all of the webpages you visit.
+                </p>
+                <h2>Nested Elements</h2>
+                <p>
+                    If you think of an HTML element as a <strong>container</strong>, it's important to note that text is not the only thing that can go inside of it. Sometimes you will want to put one HTML element inside of another, which is referred to as <strong>nesting</strong> the element.
+                </p>
+                <p>
+                    For example, if you wanted to make one of the words in a paragraph italic, the HTML element <i> can do that, but to pick out just one word in your paragraph, you would need to <strong>put it inside the paragraph element</strong>. It might look like this, for example:
+                </p>
+                <code>&lt;p&gt;Here is a paragraph with &lt;i&gt;one&lt;/i&gt; word in italics.&lt;/p&gt;</code>
+                <p>
+                    In this case, the <strong>paragraph element</strong> contains both text and an <strong>italic element</strong>>. It would display in your browser like this:
+                </p>
+                <img src="images\italics.PNG" alt="">
+                <h2>How does that make a webpage?</h2>
+                <p>
+                    A webpage is a <strong>collection of HTML elements</strong> in an HTML document. The HTML for a very simple webpage might look something like this:
+                </p>
+                <code>
+                    &lt;h1&gt;My Coding Blog&lt;/h1&gt;
+                    &lt;p&gt;&lt;i&gt;February 13, 2020&lt;/i&gt;&lt;/p&gt;
+                    &lt;/p&gt;I heard all the best web companies start out in garages. My garage is full of trash, though, so what am I supposed to do?&lt;/p&gt;
+                </code>
+                <p>
+                    Most of the webpages you regularly visit are going to have more elements than this, and there are some that your browser will require by default. <strong>Don't worry about that for now</strong>, though. The important thing to keep in mind is that an HTML document is a file, just like any other file you might find on you computer. For example, you could save the the code above to your hard drive and call it <strong>website.html</strong>:
+                </p>
+                <img src="htmlfile.jpg" alt="">
+                <p>
+                    Then you could double-click it to open it with a <strong>web browser</strong>, just the way one might open a Word Document in Microsoft Word. When your browser opens the file, it uses the HTML you've written as <strong>instructions</strong> to determine what it should show on the screen.
+                </p>
+                <p>
+                    The webpages you visit every day on the Internet are no different. When you <strong>enter a web address</strong> into your search bar or <strong>on a link</strong>, you're sending a request to a computer somewhere else, and that computer sends you a response in the form of an HTML document. In turn, your browser reads that HTML document, just like it would if you double-clicked an HTML file on your hard drive.
+                </p>
+                <p>
+                    For instance, try <a href="https://media.gcflearnfree.org/global/coding/simplehtml.html">clicking here</a> to open the example as an <strong>actual webpage</strong>. You should see something like this in a new tab or window:
+                </p>
+                <img src="blogsample.PNG" alt="">
+                <p>Now follow these quick steps:</p>
+                <ol>
+                    <li><strong>Right-click</strong> anywhere on the page you just opened.</li>
+                    <li>
+                        Find and click the option that says <strong>View page source</strong>. Depending on what browser you're using, it's possible that the option may not be there. We recommend using <strong>Google</strong> Chrome to ensure that you have the best experience with these exercises.
+                        <img src="viewpagesource.jpg" alt="">
+                    </li>
+                    <li>
+                        Another tab or window should open, showing you the <strong>HTML</strong> of the page.
+                        <img src="rawhtml.jpg" alt="">
+                    </li>
+                </ol>
+                <p>Look familiar?</p>
+                <p>
+                    Most of the webpages you visit certainly look more complicated than what you see here, but the <strong>underlying frame</strong> is still the same. No matter how elaborate they may be, the core is still HTML.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
