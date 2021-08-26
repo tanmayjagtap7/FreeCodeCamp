@@ -71,7 +71,7 @@
                 <p>
                     Most of the webpages you regularly visit are going to have more elements than this, and there are some that your browser will require by default. <strong>Don't worry about that for now</strong>, though. The important thing to keep in mind is that an HTML document is a file, just like any other file you might find on you computer. For example, you could save the the code above to your hard drive and call it <strong>website.html</strong>:
                 </p>
-                <img src="htmlfile.jpg" alt="">
+                <img src="images\htmlfile.jpg" alt="">
                 <p>
                     Then you could double-click it to open it with a <strong>web browser</strong>, just the way one might open a Word Document in Microsoft Word. When your browser opens the file, it uses the HTML you've written as <strong>instructions</strong> to determine what it should show on the screen.
                 </p>
@@ -81,22 +81,131 @@
                 <p>
                     For instance, try <a href="https://media.gcflearnfree.org/global/coding/simplehtml.html">clicking here</a> to open the example as an <strong>actual webpage</strong>. You should see something like this in a new tab or window:
                 </p>
-                <img src="blogsample.PNG" alt="">
+                <img src="images\blogsample.PNG" alt="">
                 <p>Now follow these quick steps:</p>
                 <ol>
                     <li><strong>Right-click</strong> anywhere on the page you just opened.</li>
                     <li>
                         Find and click the option that says <strong>View page source</strong>. Depending on what browser you're using, it's possible that the option may not be there. We recommend using <strong>Google</strong> Chrome to ensure that you have the best experience with these exercises.
-                        <img src="viewpagesource.jpg" alt="">
+                        <br>
+                        <img src="images\viewpagesource.jpg" alt="">
                     </li>
                     <li>
                         Another tab or window should open, showing you the <strong>HTML</strong> of the page.
-                        <img src="rawhtml.jpg" alt="">
+                        <br>
+                        <img src="images\rawhtml.jpg" alt="">
                     </li>
                 </ol>
                 <p>Look familiar?</p>
                 <p>
                     Most of the webpages you visit certainly look more complicated than what you see here, but the <strong>underlying frame</strong> is still the same. No matter how elaborate they may be, the core is still HTML.
+                </p>
+            </article>
+        </section>
+        <section class="main-class" id="Create-a-webage">
+            <header>Create a webpage</header>
+            <article>
+                <p>
+                    Once you have a basic grasp on what HTML actually is, you need to be able to see it work. A great way to do that is to <strong>write and run your own HTML</strong> on your computer. This lesson assumes that you've set up your workspace and are comfortable with the general skills that all of these tutorials require, so be sure to read lessons if not.
+                </p>
+                <h2>Create the file</h2>
+                <p>Follow these steps to create your first HTML file.</p>
+                <ol>
+                    <li>Open <strong>Sublime Text</strong>.</li>
+                    <li>
+                        Open the <strong>File</strong> menu and select <strong>New File</strong>.
+                        <br>
+                        <img src="images/newfile.jpg" alt="">
+                    </li>
+                    <li>You should see a <strong>new tab</strong> open in Sublime Text labeled <strong>untitled</strong>.</li>
+                    <li>
+                        Go back to the <strong>File</strong> menu and choose <strong>Save As</strong>.
+                        <br>
+                        <img src="images/saveas.jpg" alt="">
+                    </li>
+                    <li>
+                        Find the <strong>GCF Programming Tutorials</strong> folder you created when you set up your workspace and <strong>double-click</strong> on it.
+                        <br>
+                        <img src="images/saveas2.jpg" alt="">
+                    </li>
+                    <li>Name your file <strong>index.html</strong> and press the <strong>Save</strong> button.</li>
+                </ol>
+                <p>
+                    You have now created an <strong>empty HTML file</strong> where you'll write your first code in the following steps. There isn't anything fundamentally different about the file you just created and a text file, for example, which you could have named index.txt. The difference is that the <strong>file extension</strong> (.html, as opposed to .txt) will let any program trying to open the file know what kinds of contents it will find inside.
+                </p>
+                <img src="filename.png" alt="">
+                <p>
+                    The name you gave it, <strong>index.html</strong>, is a common name for the <strong>home page</strong> of a website. You could name it mywebsite.html, or xxlovin2codexx.html, or whatever you want, and it will work the same. The filename index.html is just a convention that has become popular over time and lets any other programmer (or even you, if you forget) know which file is the main file of your website.
+                </p>
+                <h2>Write your first HTML</h2>
+                <p>
+                    Now that you have your empty index.html file open in your text editor, you can write your first HTML. Type or copy the following into your empty index.html file:
+                </p>
+                <code>
+                    <pre>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;p&gt;Hello, world!&lt;/p&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                </code>
+                <p>There are a few basic pieces to look at here:</p>
+                <ul>
+                    <li>
+                        &lt;html&gt;: The <strong>html element</strong> is the base container for everything else on your webpage. Every other element you add will go inside of this one.
+                    </li>
+                    <li>
+                        &lt;body&gt;: The <strong>body element</strong> is where you will put all of the actual content of your website. If you were to leave it blank, you could still load the page, but you'd see nothing but a white screen. To start, all we'll put inside is a paragraph element, which you saw in the last lesson.
+                    </li>
+                    <li>
+                        &lt;p&gt;: The <strong>paragraph element</strong> is just like the paragraph elements you've seen before. This one is just nested inside other elements.
+                    </li>
+                </ul>
+                <p>
+                    Only the &lt;p&gt; element will actually show up as something you can see on the page. The others are what is often referred to as <strong>boilerplate code</strong>, meaning that they appear unchanged in just about every HTML document because your browser requires them.
+                </p>
+                <h2>Nesting</h2>
+                <p>
+                    You might have noticed a few things about how that code was <strong>formatted</strong>, too. For example, some of the elements are inside other elements. This is another example of the concept of <strong>nested elements</strong> that we covered before. 
+                </p>
+                <p>
+                    Remember that you can think of most HTML elements as <strong>containers</strong>. For example, in the code above:
+                </p>
+                <ul>
+                    <li>The &lt;html&gt; and &lt;/html&gt; tags contain the &lt;body&gt;element</li>
+                    <li>The &lt;body&gt; and &lt;/body&gt; tags contain the &lt;p&gt;element</li>
+                    <li>The &lt;p&gt; and &lt;/p&gt;tags contain some text</li>
+                </ul>
+                <img src="images/nest.png" alt="">
+                <h2>Indentations</h2>
+                <p>
+                    There are also indentations before some of the tags. They're there to make the code <strong>more readable</strong> to the programmer working on it. Some people prefer to use the <strong>tab key</strong> to make these indentations, while others prefer a few presses of the <strong>space bar</strong>, but in either case, the goal is to have an increasing amount of space for each layer of <strong>nested elements</strong>, which makes it clearer which elements are inside of which. 
+                </p>
+                <p>
+                    As far as your browser goes, the amount you indent each element <strong>makes no difference</strong>. Your browser could read that code formatted this way just as easily:
+                </p>
+                <code>
+                    &lt;html&gt;&lt;body&gt;&lt;p&gt;Hello, world!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                </code>
+                <p>
+                    That kind of formatting would make things <strong>much more difficult</strong> for you, though, and would make it much easier to make a mistake if you wanted to change something.
+                </p>
+                <h2>View your webpage</h2>
+                <p>
+                    Once you've filled in your HTML file and saved it, you can view it as a webpage in your browser. Just follow these steps:
+                </p>
+                <ol>
+                    <li>Open your <strong>File Explorer</strong> or <strong>Finder</strong>.</li>
+                    <li>Navigate to your <strong>GCF Programming Tutorials</strong> project and click inside.</li>
+                    <li>Double-click your <strong>index.html</strong> file.</li>
+                </ol>
+                <p>
+                    The file should open in your default web browser. You should see something like this:
+                </p>
+                <img src="images/helloworld.jpg" alt="">
+                <p>
+                    Congratulations! You just created your first webpage!
                 </p>
             </article>
         </section>
