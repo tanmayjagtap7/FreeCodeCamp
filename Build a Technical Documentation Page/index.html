@@ -8,19 +8,17 @@
     <nav id="navbar">
         <header>Basic HTML</header>
         <ul>
-            <li><a href="" class="nav-link">About HTML</a></li>
-            <li><a href="" class="nav-link">Create A Webpage</a></li>
-            <li><a href="" class="nav-link">Text Elements in HTML</a></li>
-            <li><a href="" class="nav-link">Lists in HTML</a></li>
-            <li><a href="" class="nav-link">Links and Images in HTML</a></li>
-            <li><a href="" class="nav-link">Interactive Elements in HTML</a></li>
-            <li><a href="" class="nav-link">Block-level, Inline, and Organizational Elements</a></li>
-            <li><a href="" class="nav-link">Metadata and the Head Element</a></li>
+            <li><a href="#about-html" class="nav-link">About HTML</a></li>
+            <li><a href="#create-a-webage" class="nav-link">Create A Webpage</a></li>
+            <li><a href="#text-elements-in-html" class="nav-link">Text Elements in HTML</a></li>
+            <li><a href="#lists-in-html" class="nav-link">Lists in HTML</a></li>
+            <li><a href="#links-and-images-in-html" class="nav-link">Links and Images in HTML</a></li>
+            <li><a href="#interactive-elements-in-html" class="nav-link">Interactive Elements in HTML</a></li>
         </ul>
     </nav>
 
     <main id="main-doc">
-        <section id="main-section" id="about-html">
+        <section class="main-section" id="about-html">
             <header>About HTML</header>
             <article>
                 <h2>What is HTML?</h2>
@@ -54,7 +52,8 @@
                 <p>
                     For example, if you wanted to make one of the words in a paragraph italic, the HTML element <i> can do that, but to pick out just one word in your paragraph, you would need to <strong>put it inside the paragraph element</strong>. It might look like this, for example:
                 </p>
-                <code>&lt;p&gt;Here is a paragraph with &lt;i&gt;one&lt;/i&gt; word in italics.&lt;/p&gt;</code>
+                <code>
+                    &lt;p&gt;Here is a paragraph with &lt;i&gt;one&lt;/i&gt; word in italics.&lt;/p&gt;</code>
                 <p>
                     In this case, the <strong>paragraph element</strong> contains both text and an <strong>italic element</strong>>. It would display in your browser like this:
                 </p>
@@ -64,9 +63,10 @@
                     A webpage is a <strong>collection of HTML elements</strong> in an HTML document. The HTML for a very simple webpage might look something like this:
                 </p>
                 <code>
-                    &lt;h1&gt;My Coding Blog&lt;/h1&gt;
-                    &lt;p&gt;&lt;i&gt;February 13, 2020&lt;/i&gt;&lt;/p&gt;
-                    &lt;/p&gt;I heard all the best web companies start out in garages. My garage is full of trash, though, so what am I supposed to do?&lt;/p&gt;
+                    <pre>
+                        &lt;h1&gt;My Coding Blog&lt;/h1&gt;
+                            &lt;p&gt;&lt;i&gt;February 13, 2020&lt;/i&gt;&lt;/p&gt;
+                        &lt;/p&gt;I heard all the best web companies start out in garages. My garage is full of trash, though, so what am I supposed to do?&lt;/p&gt;</pre>
                 </code>
                 <p>
                     Most of the webpages you regularly visit are going to have more elements than this, and there are some that your browser will require by default. <strong>Don't worry about that for now</strong>, though. The important thing to keep in mind is that an HTML document is a file, just like any other file you might find on you computer. For example, you could save the the code above to your hard drive and call it <strong>website.html</strong>:
@@ -102,7 +102,7 @@
                 </p>
             </article>
         </section>
-        <section class="main-class" id="Create-a-webage">
+        <section class="main-section" id="create-a-webage">
             <header>Create a webpage</header>
             <article>
                 <p>
@@ -147,8 +147,7 @@
                             &lt;body&gt;
                                 &lt;p&gt;Hello, world!&lt;/p&gt;
                             &lt;/body&gt;
-                        &lt;/html&gt;
-                    </pre>
+                        &lt;/html&gt;</pre>
                 </code>
                 <p>There are a few basic pieces to look at here:</p>
                 <ul>
@@ -186,7 +185,14 @@
                     As far as your browser goes, the amount you indent each element <strong>makes no difference</strong>. Your browser could read that code formatted this way just as easily:
                 </p>
                 <code>
-                    &lt;html&gt;&lt;body&gt;&lt;p&gt;Hello, world!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                    <pre>
+                    &lt;html&gt;
+                        &lt;body&gt;
+                            &lt;p&gt;
+                                Hello, world!
+                            &lt;/p&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;</pre>
                 </code>
                 <p>
                     That kind of formatting would make things <strong>much more difficult</strong> for you, though, and would make it much easier to make a mistake if you wanted to change something.
@@ -207,6 +213,183 @@
                 <p>
                     Congratulations! You just created your first webpage!
                 </p>
+            </article>
+        </section>
+        <section class="main-section" id="text-elements-in-html">
+            <header>Text Elements in HTML</header>
+            <article>
+                <h2>Adding text elements in HTML</h2>
+                <p>
+                    Some of the most common HTML elements that make up a webpage are <strong>text elements</strong>. All the text you read on this website, for example, whether it's the titles at the top of the page, the section headers, or this very text, is made from HTML text elements.
+                </p>
+                <img src="images/textElement.png" alt="">
+                <h2>The paragraph element</h2>
+                <p>
+                    The most basic way of adding text to a web page is the <strong>paragraph element</strong>. If you've been following along with this tutorial, you've seen this element before, but it's worth repeating, because the paragraph element is one of the most common HTML elements used on most of the websites you visit every day.
+                </p>
+                <code>&lt;p&gt;This is a paragraph&lt;/h1&gt;</code>
+                <p>
+                    By default, every browser puts a <strong>bit of space</strong> above and below paragraph elements when they display them, which keeps each paragraph independent from the ones around it, just like the paragraphs you'd see printed in a book or magazine.
+                </p>
+                <h2>The heading elements</h2>
+                <p>
+                    Like the paragraph element, <strong>heading elements</strong> are also used to display text on the screen. They're generally used to create <header>section headings</header>. 
+                </p>
+                <code>&lt;h1&gt;This is a heading element&lt;h1&gt;</code>
+                <p>
+                    For example, you might use a heading element to display the title of an essay you're writing, or the name of a chapter in a book. The actual text of the essay or chapter, on the other hand, would use paragraph elements.
+                </p>
+                <img src="images/HeadingAndParagraph.png" alt="">
+                <p>
+                    Heading elements come in <strong>six default levels</strong>, &lt;h1&gt; through &lt;h6&gt;, which you can think of as an <strong>order of importance</strong>. If you put an &lt;h1&gt; on your web page, for example, it's safe to assume that it's the most important section heading and probably at the top of your page, while an &lt;h2&gt; is slightly less and important, and so on. 
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="lists-in-html">
+            <header>Lists in HTML</header>
+            <article>
+                <h2>Adding lists in HTML</h2>
+                <p>
+                    Another HTML element meant to help you structure the content on your page is the <strong>list element</strong>. You probably see lists on webpages all the time—rows of content marked by bullet points, or numbers, or Roman numerals—and sometimes you may be looking at lists without even realizing that the underlying structure is an HTML list. In all of these cases, one of two HTML elements is behind it: the <strong>unordered list</strong> or the <strong>ordered list</strong>.
+                </p>
+                <img src="
+                images/lists.png" alt="">
+                <h2>Unordered lists</h2>
+                <p>An <strong>unordered list</strong> element looks like this:</p>
+                <code>&lt;ul&gt;&lt;/ul&gt;</code>
+                <p>
+                    However, unlike what you've seen so far, these tags don't do anything on their own. To display content as a list, you need <strong>two HTML elements working together</strong>: the list itself, like the &lt;ul&gt; element above, and the <strong>list item</strong> element, which goes inside:
+                </p>
+                <code>
+                    <pre>
+                        &lt;ul&gt;
+                            &lt;li&gt;This is a list item.&lt;/li&gt;
+                                &lt;li&gt;This is a second list item.&lt;/li&gt;
+                            &lt;li&gt;Three list items right here.&lt;/li&gt;
+                        &lt;/ul&gt;</pre>
+                </code>
+                <p>
+                    In an unordered list like this one, your browser would not actually display anything for the &lt;ul&gt; and &lt;/ul&gt; tags themselves. Instead, it would treat them as <strong>instructions</strong> for how to display the &lt;li&gt; elements inside. An unordered list tells the browser to display each list item with a <strong>bullet point</strong> by default. If you were to load that example in your browser, it would look like this:
+                </p>
+                <img src="images/ul-list.PNG" alt="">
+                <h2>Ordered lists</h2>
+                <p>
+                    An ordered list element looks like this:
+                </p>
+                <code><ol></ol></code>
+                <p>
+                    The structure of an ordered list element is <strong>basically the same</strong> as that of an unordered list: the &lt;ol&gt; element is the root, and any number of &lt;li&gt; elements go inside of it:
+                </p>
+                <code>
+                    <pre>
+                        &lt;ol&gt;
+                            &lt;li&gt;This is a list item.&lt;/li&gt;
+                                &lt;li&gt;This is a second list item.&lt;/li&gt;
+                            &lt;li&gt;Three list items right here.&lt;/li&gt;
+                        &lt;/ol&gt;</pre>
+                </code>
+                <p>
+                    However, in an ordered list, your browser counts the list items inside and <strong>automatically adds numbers</strong> next to them, rather than bullet points.  If you were to load this example in your browser, it would look like this:
+                </p>
+                <img src="images/ol-list.PNG" alt="">
+            </article>
+        </section>
+        <section class="main-section" id="links-and-images-in-html">
+            <header>Links and Images in HTML</header>
+            <article>
+                <h2>Adding links and images in HTML</h2>
+                <p>
+                    After text elements, the HTML elements you'll see most often are <strong>links</strong> and <strong>images</strong>. Almost every time you navigate to a new page on a website or a new website altogether, you click on a link to do it, and nearly every website you visit is likely covered with images, this one included. They may seem unrelated at first, but both are set apart from the text elements you've seen so far because they rely on <strong>HTML attributes</strong> to be useful.
+                </p>
+                <h2>HTML attributes </h2>
+                <p>
+                    An HTML attribute is an extra bit of information you can include along with an element that tells the browser more about it. In most cases, it consists of a <strong>name</strong> and <strong>value</strong> included in the opening tag of the element and formatted like this:
+                </p>
+                <code>name="value"</code>
+                <p>
+                    For example, this is an element with an HTML attribute where the name is "id" and the value is "myParagraph":
+                </p>
+                <img src="images/html_attribute.png" alt="">
+                <p>
+                    Any HTML element can have attributes, and there are a variety of different HTML attributes with different functions, but we'll get into them later. The big thing that sets links and images apart is that they <strong>must have HTML attributes</strong> to do anything at all.
+                </p>
+                <h2>Links </h2>
+                <p>
+                    The HTML element for a link is actually called an <strong>anchor element</strong>. An anchor element with no HTML attribute might look like this:
+                </p>
+                <code>&lt;a&gt;Click me&lt;/a&gt;
+                </code>
+                <p>
+                    If you wanted, you could add that to your <strong>index.html page</strong>, and you'd see the text when you loaded it in the browser. However, without an HTML attribute, your anchor element wouldn't do anything. It would be <strong>nothing but text</strong>. 
+                </p>
+                <p>
+                    Let's say you wanted your anchor element to <strong>link back to this website</strong>, so if anybody were to click on it, their browser would be redirected to our homepage. That anchor element would look more like this:
+                </p>
+                <code>&lt;a&gt; href="https://edu.gcfglobal.org/"&gt;Click me&lt;/a&gt;
+                </code>
+                <p>
+                    The part you'd actually see on the page would be unchanged: just the words "Click me." If somebody were to click on it, though, they would be taken to our homepage. You could put the URL for any website as the value of an href attribute—whatever <strong>web address</strong> you see in the address bar of your browser—to make a link that navigates to it.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="interactive-elements-in-html">
+            <header>Interactive Elements in HTML</header>
+            <article>
+                <h2>Adding interactive elements in HTML</h2>
+                <p>
+                    Once you've added text, links, and images, you've got most of the basic pieces you're likely see in the websites you visit every day. However, the last essential components are <strong>interactive elements</strong>. Any time you put a username and password into a login field, or press a button to open a menu, or click a checkbox on a settings page, you're dealing with interactive elements such as <strong>buttons</strong> and <strong>inputs</strong>.
+                </p>
+                <h2>Buttons</h2>
+                <p>
+                    The HTML element for a <strong>button</strong> is exactly what you might guess:
+                </p>
+                <code>&lt;button&gt;Press me&lt;/button&gt;</code>
+                <p>
+                    It might feel more complicated than that because you see so many different types of buttons, and they often look radically different from one another. However, the vast majority of those looks are accomplished with <strong>CSS</strong>, which we will cover later; the underlying HTML is usually no more complicated than what you see above.
+                </p>
+                <p>
+                    The text inside the button element is what will be displayed on the button, but it can also contain <strong>image elements</strong> instead. For example, a common type of button you see on many websites (this one included) is called a <strong>hamburger button</strong>, named because the image it uses resembles a hamburger. The HTML might look like this:
+                </p>
+                <code>
+                    <pre>
+                        &lt;button&gt;
+                        &lt;img src="https://media.gcflearnfree.org/global/coding/hamburger-button.png"&gt;
+                      &lt;/button&gt;</pre>
+                </code>
+                <p>
+                    Other than links, most of the things you click on a webpage to make something happen are probably button elements, even if they look extremely different from one another.
+                </p>
+                <h2>Inputs</h2>
+                <p>
+                    The other most common way you've probably interacted with websites is through <strong>inputs</strong>. At some point, you've probably been asked to enter a username and password for a website. Maybe there was a <strong>checkbox</strong> that asked if you had read a Terms of Service page, or something along those lines, and maybe a <strong>drop-down menu</strong> that asks you to choose an option from many. If you've ever created an account on this website, for example, you've seen and used all three:
+                </p>
+                <img src="images/gcf-create-account.jpg" alt="">
+                <p>
+                    Each of these options is a type of <strong>HTML input</strong>. For example, these are the elements for a <strong>text input</strong> (like the ones you type a username or password into) and a <strong>checkbox input</strong>:
+                </p>
+                <code>
+                    <pre>
+                        &lt;input type="text"&gt;
+                        &lt;input type="checkbox"&gt;</pre>
+                </code>
+                <p>
+                    Notice that they actually use the same HTML element, &lt;input&gt;, with different <strong>HTML attribute values</strong>. Those values give the browser enough information to display two completely different things when loaded:
+                </p>
+                <p>
+                    A drop-down input, on the other hand, is made using a <strong>select element</strong>, which contains a number of <strong>option elements</strong>. The HTML would look like something like this:
+                </p>
+                <code>
+                    <pre>
+                        &lt;selec&gt;
+                        &lt;option&gt;The First Option&lt;/option&gt;
+                        &lt;option&gt;Another One&lt;/option&gt;
+                        &lt;option&gt;Bunch of Options Here&lt;/option&gt;
+                        &lt;/select&gt;</pre>
+                </code>
+                <p>
+                    This element is structured similarly to the &lt;ol&gt; and &lt;ul&gt; elements you used to make lists. That's because the &lt;select&gt; element itself isn't displayed; instead, it acts as instructions to tell the browser how to display the &lt;option&gt; elements nested inside.
+                </p>
+
             </article>
         </section>
     </main>

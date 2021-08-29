@@ -23,7 +23,7 @@ header{
     text-align: center;
     margin: 10px;
     font-size: 1.8em;
-    font-weight: thin;
+    font-weight: bolder;
 }
 
 #navbar ul {
@@ -65,7 +65,6 @@ section article {
 code {
   display: block;
   text-align: left;
-  white-space: pre-line;
   position: relative;
   word-break: normal;
   word-wrap: normal;
@@ -109,6 +108,9 @@ img{
   display: block;
   margin-block: 5px 20px;
   margin-inline: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #19191a;
 }
 
 li img{
