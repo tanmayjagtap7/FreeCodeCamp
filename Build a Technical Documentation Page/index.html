@@ -14,6 +14,8 @@
             <li><a href="#lists-in-html" class="nav-link">Lists in HTML</a></li>
             <li><a href="#links-and-images-in-html" class="nav-link">Links and Images in HTML</a></li>
             <li><a href="#interactive-elements-in-html" class="nav-link">Interactive Elements in HTML</a></li>
+            <li><a href="#block-level-inline-and-organizational-elements" class="nav-link"> Block-level, Inline, and Organizational Elements</a></li>
+            <li><a href="#metadata-and-the-head-element" class="nav-link" style="border-bottom: 1px solid #4b0f0f;"> Metadata and the Head Element</a></li>
         </ul>
     </nav>
 
@@ -39,7 +41,7 @@
                     Each HTML element is made up of <strong>tags</strong>, which for this element are the &lt;p&gt; and &lt;/p&gt; symbols you see on either side. You can think of them as a <strong>container</strong>, where the &lt;p&gt; tag marks the beginning of an element, the &lt;/p&gt; tag marks the end, and the content is the text in between.
                 </p>
                 <p>
-                    The tags in the image below specify that the text inside is a <strong>paragraph</strong>, which lets your browser know how to display it. If you were to load that <p> element in a webpage, for example, you would not see the <p> and </p> tags on the screen. Your browser would just read those tags as <strong>instructions</strong> to take the text in between and show it on the screen, and to give that text a little space above and below, and to let it take up a whole line on its own, just like a paragraph printed in a book.
+                    The tags in the image below specify that the text inside is a <strong>paragraph</strong>, which lets your browser know how to display it. If you were to load that &lt;p&gt; element in a webpage, for example, you would not see the &lt;p&gt; and &lt;p&gt; tags on the screen. Your browser would just read those tags as <strong>instructions</strong> to take the text in between and show it on the screen, and to give that text a little space above and below, and to let it take up a whole line on its own, just like a paragraph printed in a book.
                 </p>
                 <img src="images\hml2.png" alt="">
                 <p>
@@ -50,7 +52,7 @@
                     If you think of an HTML element as a <strong>container</strong>, it's important to note that text is not the only thing that can go inside of it. Sometimes you will want to put one HTML element inside of another, which is referred to as <strong>nesting</strong> the element.
                 </p>
                 <p>
-                    For example, if you wanted to make one of the words in a paragraph italic, the HTML element <i> can do that, but to pick out just one word in your paragraph, you would need to <strong>put it inside the paragraph element</strong>. It might look like this, for example:
+                    For example, if you wanted to make one of the words in a paragraph italic, the HTML element &lt;i&gt; can do that, but to pick out just one word in your paragraph, you would need to <strong>put it inside the paragraph element</strong>. It might look like this, for example:
                 </p>
                 <code>
                     &lt;p&gt;Here is a paragraph with &lt;i&gt;one&lt;/i&gt; word in italics.&lt;/p&gt;</code>
@@ -63,10 +65,9 @@
                     A webpage is a <strong>collection of HTML elements</strong> in an HTML document. The HTML for a very simple webpage might look something like this:
                 </p>
                 <code>
-                    <pre>
-                        &lt;h1&gt;My Coding Blog&lt;/h1&gt;
-                            &lt;p&gt;&lt;i&gt;February 13, 2020&lt;/i&gt;&lt;/p&gt;
-                        &lt;/p&gt;I heard all the best web companies start out in garages. My garage is full of trash, though, so what am I supposed to do?&lt;/p&gt;</pre>
+                    <pre>&lt;h1&gt;My Coding Blog&lt;/h1&gt;
+&lt;p&gt;&lt;i&gt;February 13, 2020&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;I heard all the best web companies start out in garages. My garage is full of trash, though, so what am I supposed to do?&lt;/p&gt;</pre>
                 </code>
                 <p>
                     Most of the webpages you regularly visit are going to have more elements than this, and there are some that your browser will require by default. <strong>Don't worry about that for now</strong>, though. The important thing to keep in mind is that an HTML document is a file, just like any other file you might find on you computer. For example, you could save the the code above to your hard drive and call it <strong>website.html</strong>:
@@ -133,7 +134,7 @@
                 <p>
                     You have now created an <strong>empty HTML file</strong> where you'll write your first code in the following steps. There isn't anything fundamentally different about the file you just created and a text file, for example, which you could have named index.txt. The difference is that the <strong>file extension</strong> (.html, as opposed to .txt) will let any program trying to open the file know what kinds of contents it will find inside.
                 </p>
-                <img src="filename.png" alt="">
+                <img src="images/filename.png" alt="">
                 <p>
                     The name you gave it, <strong>index.html</strong>, is a common name for the <strong>home page</strong> of a website. You could name it mywebsite.html, or xxlovin2codexx.html, or whatever you want, and it will work the same. The filename index.html is just a convention that has become popular over time and lets any other programmer (or even you, if you forget) know which file is the main file of your website.
                 </p>
@@ -142,12 +143,11 @@
                     Now that you have your empty index.html file open in your text editor, you can write your first HTML. Type or copy the following into your empty index.html file:
                 </p>
                 <code>
-                    <pre>
-                        &lt;html&gt;
-                            &lt;body&gt;
-                                &lt;p&gt;Hello, world!&lt;/p&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;</pre>
+                    <pre>&lt;html&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello, world!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
                 </code>
                 <p>There are a few basic pieces to look at here:</p>
                 <ul>
@@ -185,14 +185,13 @@
                     As far as your browser goes, the amount you indent each element <strong>makes no difference</strong>. Your browser could read that code formatted this way just as easily:
                 </p>
                 <code>
-                    <pre>
-                    &lt;html&gt;
-                        &lt;body&gt;
-                            &lt;p&gt;
-                                Hello, world!
-                            &lt;/p&gt;
-                        &lt;/body&gt;
-                    &lt;/html&gt;</pre>
+                    <pre>&lt;html&gt;
+    &lt;body&gt;
+        &lt;p&gt;
+            Hello, world!
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
                 </code>
                 <p>
                     That kind of formatting would make things <strong>much more difficult</strong> for you, though, and would make it much easier to make a mistake if you wanted to change something.
@@ -261,12 +260,11 @@
                     However, unlike what you've seen so far, these tags don't do anything on their own. To display content as a list, you need <strong>two HTML elements working together</strong>: the list itself, like the &lt;ul&gt; element above, and the <strong>list item</strong> element, which goes inside:
                 </p>
                 <code>
-                    <pre>
-                        &lt;ul&gt;
-                            &lt;li&gt;This is a list item.&lt;/li&gt;
-                                &lt;li&gt;This is a second list item.&lt;/li&gt;
-                            &lt;li&gt;Three list items right here.&lt;/li&gt;
-                        &lt;/ul&gt;</pre>
+                    <pre>&lt;ul&gt;
+    &lt;li&gt;This is a list item.&lt;/li&gt;
+    &lt;li&gt;This is a second list item.&lt;/li&gt;
+    &lt;li&gt;Three list items right here.&lt;/li&gt;
+&lt;/ul&gt;</pre>
                 </code>
                 <p>
                     In an unordered list like this one, your browser would not actually display anything for the &lt;ul&gt; and &lt;/ul&gt; tags themselves. Instead, it would treat them as <strong>instructions</strong> for how to display the &lt;li&gt; elements inside. An unordered list tells the browser to display each list item with a <strong>bullet point</strong> by default. If you were to load that example in your browser, it would look like this:
@@ -276,17 +274,16 @@
                 <p>
                     An ordered list element looks like this:
                 </p>
-                <code><ol></ol></code>
+                <code>&lt;ol&gt;</code>
                 <p>
                     The structure of an ordered list element is <strong>basically the same</strong> as that of an unordered list: the &lt;ol&gt; element is the root, and any number of &lt;li&gt; elements go inside of it:
                 </p>
                 <code>
-                    <pre>
-                        &lt;ol&gt;
-                            &lt;li&gt;This is a list item.&lt;/li&gt;
-                                &lt;li&gt;This is a second list item.&lt;/li&gt;
-                            &lt;li&gt;Three list items right here.&lt;/li&gt;
-                        &lt;/ol&gt;</pre>
+                    <pre>&lt;ol&gt;
+    &lt;li&gt;This is a list item.&lt;/li&gt;
+    &lt;li&gt;This is a second list item.&lt;/li&gt;
+    &lt;li&gt;Three list items right here.&lt;/li&gt;
+&lt;/ol&gt;</pre>
                 </code>
                 <p>
                     However, in an ordered list, your browser counts the list items inside and <strong>automatically adds numbers</strong> next to them, rather than bullet points.  If you were to load this example in your browser, it would look like this:
@@ -351,10 +348,9 @@
                     The text inside the button element is what will be displayed on the button, but it can also contain <strong>image elements</strong> instead. For example, a common type of button you see on many websites (this one included) is called a <strong>hamburger button</strong>, named because the image it uses resembles a hamburger. The HTML might look like this:
                 </p>
                 <code>
-                    <pre>
-                        &lt;button&gt;
-                        &lt;img src="https://media.gcflearnfree.org/global/coding/hamburger-button.png"&gt;
-                      &lt;/button&gt;</pre>
+                    <pre>&lt;button&gt;
+    &lt;img src="https://media.gcflearnfree.org/global/coding/hamburger-button.png"&gt;
+&lt;/button&gt;</pre>
                 </code>
                 <p>
                     Other than links, most of the things you click on a webpage to make something happen are probably button elements, even if they look extremely different from one another.
@@ -368,9 +364,8 @@
                     Each of these options is a type of <strong>HTML input</strong>. For example, these are the elements for a <strong>text input</strong> (like the ones you type a username or password into) and a <strong>checkbox input</strong>:
                 </p>
                 <code>
-                    <pre>
-                        &lt;input type="text"&gt;
-                        &lt;input type="checkbox"&gt;</pre>
+                    <pre>&lt;input type="text"&gt;
+&lt;input type="checkbox"&gt;</pre>
                 </code>
                 <p>
                     Notice that they actually use the same HTML element, &lt;input&gt;, with different <strong>HTML attribute values</strong>. Those values give the browser enough information to display two completely different things when loaded:
@@ -379,17 +374,168 @@
                     A drop-down input, on the other hand, is made using a <strong>select element</strong>, which contains a number of <strong>option elements</strong>. The HTML would look like something like this:
                 </p>
                 <code>
-                    <pre>
-                        &lt;selec&gt;
-                        &lt;option&gt;The First Option&lt;/option&gt;
-                        &lt;option&gt;Another One&lt;/option&gt;
-                        &lt;option&gt;Bunch of Options Here&lt;/option&gt;
-                        &lt;/select&gt;</pre>
+                    <pre>&lt;select&gt;
+    &lt;option&gt;The First Option&lt;/option&gt;
+    &lt;option&gt;Another One&lt;/option&gt;
+    &lt;option&gt;Bunch of Options Here&lt;/option&gt;
+&lt;/select&gt;</pre>
                 </code>
                 <p>
                     This element is structured similarly to the &lt;ol&gt; and &lt;ul&gt; elements you used to make lists. That's because the &lt;select&gt; element itself isn't displayed; instead, it acts as instructions to tell the browser how to display the &lt;option&gt; elements nested inside.
                 </p>
 
+            </article>
+        </section>
+        <section class="main-section" id="block-level-inline-and-organizational-elements">
+            <header>Block-level, Inline, and Organizational Elements</header>
+            <article>
+                <h2>Block-level, Inline, and Organizational Elements</h2>
+                <p>
+                    When you load a webpage in your browser, all the HTML elements on the page have default ways of <strong>visually organizing themselves</strong>. For example, &lt;p&gt; elements all stack up nicely on their own lines, while &lt;a&gt; elements line up on a single line. Almost every other HTML element follows one of those patterns as well, because they all generally fall into one of two categories: <strong>block-level</strong> or <strong>inline</strong> elements.
+                </p>
+                <img src="images/block_vs_inline_diagram.png" alt="">
+                <h2>Block-level elements</h2>
+                <p>
+                    A block-level element is an HTML element that takes up the <strong>full width of the element that contains it</strong>. You've already seen a few of them, such as:
+                </p>
+                <ul>
+                    <li>&lt;p&gt;</li>
+                    <li>&lt;h1&gt; through &lt;h6&gt;</li>
+                    <li>&lt;ul&gt;</li>
+                </ul>
+                <p>
+                    Take a &lt;p&gt; element, for example. Even if you only put one word in a &lt;p&gt; element, it <strong>takes up all the width that's available to it</strong>. Below is a &lt;p&gt; element that has been colored; notice that it reaches from one end of the image to the other, even though only part of it actually has any text in it.
+                </p>
+                <img src="images/psingle.jpg" alt="">
+                <p>
+                    Because block-level elements take up all of the width available to them, they stack on top of each other, rather than lining up:
+                </p>
+                <img src="images/pstacked.jpg" alt="">
+                <h2>Inline Elements</h2>
+                <p>
+                    An inline element is an HTML element that <strong>only takes up the width that its content takes up</strong>. You've seen a few of these, too:
+                </p>
+                <ul>
+                    <li>&lt;a&gt;</li>
+                    <li>&lt;b&gt;</li>
+                    <li>&lt;i&gt;</li>
+                    <li>&lt;img&gt;</li>
+                </ul>
+                <p>
+                    To illustrate, let's take that stack of &lt;p&gt; elements from the last section and make them all &lt;a&gt; elements instead. &lt;a&gt; elements are inline elements, rather than block-level, which means that instead of taking up all the width they have available, they will only <strong>take up enough for their content</strong>. In this case, that's text. Here they are colored for visibility:
+                </p>
+                <img src="images/aelements.jpg" alt="">
+                <p>
+                    Notice that these elements don't stretch beyond the text they contain. In turn, they have the room to line up on a single line, and they won't move to a new line until they run out of space. This behavior makes it so that inline elements are well-suited to being used inside of block-level elements. 
+                </p>
+                <p>
+                    Don't worry about memorizing which elements are block and which are inline, or feeling like it's too much information to take in. The important thing is just to <strong>remember the concept</strong> of block-level and inline elements, as well as <strong>the general distinction</strong> between the two. Every programmer will forget what element is what from time to time, but if you remember the concept, you will have a good idea of where to start when something on your webpage doesn't display the way you expected. 
+                </p>
+                <h2>Organizational elements</h2>
+                <p>
+                    The purest form of block-level and inline elements are two HTML elements used primarily for organizing other elements: &lt;div&gt; and &lt;span&gt;
+                </p>
+                <h2>Div</h2>
+                <p>
+                    The &lt;div&gt; element is a block-level element used almost exclusively to <strong>group other elements</strong>. For example, you might group a few paragraphs with a &lt;div&gt; element, and it would look like this:
+                </p>
+                <code>
+                    <pre>&lt;div&gt;
+    &lt;p&gt;Here's a paragraph element, which is block-level.&lt;/p&gt;
+    &lt;p&gt;This is another paragraph element. Same thing.&lt;/p&gt;
+    &lt;p&gt;Check it out, they're all stacking up.&lt;/p&gt;
+&lt;/div&gt;</pre>
+                </code>
+                <p>
+                    The &lt;div&gt; element <strong>doesn't look like anything</strong> on its own, though. If you were to load the HTML above in your browser, it wouldn't be apparent that there was a &lt;div&gt; element there; the three stacked paragraphs would look just like they did before. It's only there to hold other elements.
+                </p>
+                <p>
+                    The purpose of the &lt;div&gt; element will become much more apparent once you start learning <strong>CSS</strong> and <strong>JavaScript</strong>. By grouping elements together, the &lt;div&gt; element makes it easier to target just certain parts of your webpage when you want to change the way they look or do something to them.
+                </p>
+                <h2>Span</h2>
+                <p>
+                    The &lt;span&gt; element functions much like the &lt;div&gt; element, but for inline elements, rather than block-level. For example, imagine that you wanted to group some of the words in one of your &lt;p&gt; elements, but not all of them. Because a &lt;div&gt; element is block-level, it would not be suited to that task, but a &lt;span&gt; would:
+                </p>
+                <code>
+                    &lt;p&gt;Here's a paragraph, but &lt;span&gt;these words&lt;/span&gt; are grouped.&lt;/p&gt;
+                </code>
+                <p>
+                    Like the &lt;div&gt; element, this <strong>wouldn't look any different</strong> from a regular &lt;p&gt; element on its own; if you loaded it in the browser, you wouldn't see any hint that a &lt;span&gt; element was there. However, it would make it easier to target just those words with CSS or JavaScript.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="metadata-and-the-head-element">
+            <header>Metadata and the Head Element</header>
+            <article>
+                <h2>Metadata and the Head Element</h2>
+                <p>
+                    The HTML we've been working with so far works, but it's technically missing some pieces that every browser expects it to include: the <strong>DOCTYPE declaration</strong> and the <strong>head element</strong>. Unlike most of the elements you've worked with so far, though, these ones are not focused on creating the structure of what you see on the page. Instead, they're focused on establishing the <strong>metadata</strong> of your webpage. 
+                </p>
+                <img src="images/metadata.png" alt="">
+                <h2>Metadata</h2>
+                <p>
+                    Metadata is often described as <strong>"data about data."</strong> In other words, if the HTML of your webpage is data, metadata is additional information used to explain various things about that HTML. For example, one might use it to establish:
+                </p>
+                <ul>
+                    <li>What version of HTML a webpage is using</li>
+                    <li>The title of a webpage</li>
+                    <li>An image or text that sums up a webpage</li>
+                </ul>
+                <p>
+                    In turn, anything that reads your webpage—a browser, or a social media platform like Facebook or Twitter where it might be shared, or a search engine like Google that might automatically collect information about all sorts of webpages—can use that metadata to tell people useful information about your webpage.
+                </p>
+                <h2>The DOCTYPE declaration</h2>
+                <p>
+                    One of the most essential pieces of metadata that is required on every webpage is the <strong>DOCTYPE declaration</strong>. It should be the first thing you see in an HTML document (we'll be adding it to yours shortly) and looks like this:
+                </p>
+                <code><&lt;!DOCTYPE html&gt;</code>
+                <p>
+                    This particular DOCTYPE declaration states both that an HTML document <strong>contains HTML</strong>, and that the version of that HTML is <strong>HTML5</strong>. It's important because there are still plenty of webpages on the Internet written in older versions of HTML. For example, some webpages might have a DOCTYPE declaration that looks more like this:
+                </p>
+                <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</code>
+                <p>
+                    That declaration specifies an earlier version of HTML (4.1), which has some differences from HTML5. When you load a webpage that doesn't have a DOCTYPE declaration, your browser goes into a special mode called <strong>quirks mode</strong>. That basically just means that the browser is guessing what kind of HTML a webpage is using, and when the browser starts guessing, it sometimes gets things wrong.
+                </p>
+                <h2>The head element</h2>
+                <p>
+                    The rest of the metadata one might provide for a webpage goes inside of a special HTML element called <strong>the &lt;head&gt; element</strong>. It looks like this:
+                </p>
+                <code>&lt;head&gt;&lt;/head&gt;</code>
+                <p>
+                    Like many of the other HTML elements you've used, you can think of it as a container meant to hold all the various types of metadata you might want to include. However, it's <strong>not part of the structure of your webpage</strong>; it's not visible when you load the webpage, and none of the elements you put inside of it will be either. 
+                </p>
+                <p>
+                    The simplest version of a head element contains just one thing: <strong>the &lt;title&gt; element</strong>. The &lt;title&gt; element, as the name suggests, should contain the title of your webpage. It's the only thing your browser requires the head element to contain:
+                </p>
+                <code>&lt;title&gt;My Very Good Webpage&lt;/title&gt;</code>
+                <p>
+                    The &lt;title&gt; element lets anything that reads your HTML document know what to call it. For example, most browsers use the &lt;title&gt; element to determine what to show in the tab for that webpage. If you were to load a webpage with the above title element in your browser, you'd see this in your browser tab:
+                </p>
+                <img src="images/browser-tab.jpg" alt="">
+                <h2>Real-world metadata</h2>
+                <p>
+                    It may feel at first like metadata is unimportant—you can't see it doing anything on your webpage, after all—but <strong>you're actually seeing metadata in use all the time</strong> in day-to-day life. For example, let's consider this site. If you were to search for GCFLearnFree on Google, this would be your top result:
+                </p>
+                <img src="images/gcflearnfree-google.jpg" alt="">
+                <p>
+                    However, if you go to our homepage, you'll notice that the description given on the Google result is nowhere to be found on the page. That's because Google has automatically <strong>pulled it from the metadata</strong> included in our HTML:
+                </p>
+                <code>&lt;meta name="description" content="GCFGLobal - The freedom to learn what you want, when you want, absolutely free! Check out our Everyday Life, Basic Math, and Computer Training today!"&gt;</code>
+                <p>
+                    If you were to share our homepage on Facebook, you'd see something like this:
+                </p>
+                <img src="images/fbshare.jpg" alt="">
+                <p>
+                    Just like before, the images and text you see there <strong>don't appear on the homepage</strong>. Instead, they also come from a handful of slightly different meta tags in the head element, these particular ones required by Facebook:
+                </p>
+                <code>
+                    <pre>&lt;meta property="og:title" content="Free Online Learning at GCFGlobal"&gt;
+&lt;meta property="og:description" content="GCFGLobal - The freedom to learn what you want, when you want, absolutely free! Check out our Everyday Life, Basic Math, and Computer Training today!"&gt;
+&lt;meta property="og:image" content="https://media.gcflearnfree.org/global/layout/social/gcf-website-image.png"&gt;</pre>
+                </code>
+                <p>
+                    In other words, metadata doesn't necessarily tell you or show you much when you're just looking at your own webpage, but it does a lot to help your browser make sense of your HTML, and it can provide tools for things like social media platforms and search engines to <strong>understand and explain what your webpage is all about</strong>.
+                </p>
             </article>
         </section>
     </main>
